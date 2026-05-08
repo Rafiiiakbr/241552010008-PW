@@ -1,0 +1,305 @@
+/* Reset dasar agar tampilan konsisten di semua browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===========================
+   STYLING UNTUK NAVBAR
+   =========================== */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Membuat logo di kiri, menu di kanan */
+    align-items: center; /* Meratakan secara vertikal di tengah */
+    padding: 25px 50px;
+    background-color: #ffffff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800; /* Bold (tebal) */
+    color: #111111; /* Warna hitam untuk 'Tazkia' */
+}
+
+.logo span {
+    color: #4b38d3; /* Warna biru-ungu untuk 'Tech' */
+}
+
+.nav-links {
+    list-style: none; /* Menghilangkan titik pada list */
+    display: flex;
+    gap: 30px; /* Jarak antar menu */
+}
+
+.nav-links a {
+    text-decoration: none; /* Menghilangkan garis bawah link */
+    color: #333333;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4b38d3; /* Berubah warna saat di-hover */
+}
+
+/* ===========================
+   STYLING UNTUK HERO SECTION
+   =========================== */
+.hero {
+    /* Background gradient dari ungu ke biru cyan */
+    background: linear-gradient(135deg, #5b42f3 0%, #00d2ff 100%);
+    min-height: 80vh; /* Tinggi minimal section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Teks di tengah secara vertikal */
+    align-items: center; /* Teks di tengah secara horizontal */
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+/* Judul Utama */
+.hero h1 {
+    font-family: 'Georgia', 'Times New Roman', serif; /* Font jenis serif sesuai gambar */
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Teks 'Digital' yang berwarna kuning */
+.hero h1 .highlight {
+    color: #fbd341;
+}
+
+/* Deskripsi di bawah judul */
+.hero p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* ===========================
+   STYLING UNTUK TOMBOL (BUTTON)
+   =========================== */
+.hero-buttons {
+    display: flex;
+    gap: 20px; /* Jarak antara kedua tombol */
+}
+
+.btn {
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 50px; /* Membuat sudut tombol menjadi sangat melingkar (pill) */
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Tombol Kiri (Hubungi Kami) - Latar putih, teks biru */
+.btn-primary {
+    background-color: #ffffff;
+    color: #4b38d3;
+}
+
+.btn-primary:hover {
+    background-color: #f4f4f4; /* Sedikit gelap saat di-hover */
+}
+
+/* Tombol Kanan (Layanan Kami) - Transparan, garis putih */
+.btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-outline:hover {
+    background-color: #ffffff;
+    color: #4b38d3;
+}
+/* ================= HERO ================= */
+.hero{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8%;
+}
+
+.hero h1{
+    font-size: 52px;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    max-width: 650px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-contact{
+    display: inline-block;
+    background: #00a2ff;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 6px;
+    margin-right: 15px;
+    margin-top: 10px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn-contact:hover{
+    background: #0077cc;
+    transform: translateY(-3px);
+}
+
+/* ================= ABOUT ================= */
+.Tentang{
+    padding: 80px 8%;
+    background: white;
+}
+
+.about-text h2{
+    font-size: 38px;
+    color: #0d47a1;
+    margin-bottom: 15px;
+}
+
+.about-text h3{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-text p{
+    margin-bottom: 12px;
+    color: #555;
+}
+
+/* ================= SERVICES ================= */
+.services{
+    padding: 80px 8%;
+    background: #f5f7fa;
+    text-align: center;
+}
+
+.services h2{
+    font-size: 38px;
+    color: #0d47a1;
+    margin-bottom: 15px;
+}
+
+.services > p{
+    color: #666;
+    margin-bottom: 45px;
+}
+
+/* GRID */
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+.card{
+    background: white;
+    border-radius: 10px;
+    padding: 30px 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.card h3{
+    color: #0d47a1;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.card p{
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* BUTTON */
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background: #00a2ff;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #0077cc;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 992px){
+
+    .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .hero h1{
+        font-size: 42px;
+    }
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media(max-width: 768px){
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .nav-menu ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .hero{
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero h1{
+        font-size: 34px;
+    }
+
+    .hero p{
+        font-size: 16px;
+    }
+
+    .btn-contact{
+        display: block;
+        width: 220px;
+        margin: 10px auto;
+    }
+}
