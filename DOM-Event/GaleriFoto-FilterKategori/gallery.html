@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Galeri Foto</h1>
+
+    <!-- Filter Button -->
+    <div class="filter-btns">
+
+      <button class="filter active" data-cat="all">
+        Semua
+      </button>
+
+      <button class="filter" data-cat="alam">
+        Alam
+      </button>
+
+      <button class="filter" data-cat="kota">
+        Kota
+      </button>
+
+      <button class="filter" data-cat="kuliner">
+        Kuliner
+      </button>
+
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery" id="gallery">
+
+      <div class="card" data-cat="alam">
+        <img src="https://picsum.photos/300/200?1">
+        <p>Gunung Bromo</p>
+      </div>
+
+      <div class="card" data-cat="alam">
+        <img src="https://picsum.photos/300/200?2">
+        <p>Danau Indah</p>
+      </div>
+
+      <div class="card" data-cat="kota">
+        <img src="https://picsum.photos/300/200?3">
+        <p>Jakarta Malam</p>
+      </div>
+
+      <div class="card" data-cat="kota">
+        <img src="https://picsum.photos/300/200?4">
+        <p>Gedung Modern</p>
+      </div>
+
+      <div class="card" data-cat="kuliner">
+        <img src="https://picsum.photos/300/200?5">
+        <p>Nasi Goreng</p>
+      </div>
+
+      <div class="card" data-cat="kuliner">
+        <img src="https://picsum.photos/300/200?6">
+        <p>Sate Ayam</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
