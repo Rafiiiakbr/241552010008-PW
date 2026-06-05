@@ -1,0 +1,103 @@
+/* Styling dasar halaman */
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Komponen Formulir */
+#formulir {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Pesan Error & Elemen Tersembunyi */
+.pesan-error {
+  color: #ff3333;
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 5px;
+}
+
+.tersembunyi {
+  display: none !important;
+}
+
+/* Notifikasi Sukses */
+#sukses {
+  background: #e6f4ea;
+  color: #137333;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  font-weight: bold;
+}
+
+/* Tombol Submit */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Bilah Indikator Password */
+.bilah { 
+  background: #eee; 
+  height: 4px; 
+  margin-top: 5px; 
+  border-radius: 2px; 
+}
+
+/* Warna dan Lebar Bilah Berdasarkan Kekuatan */
+.isian.lemah { 
+  background: #ff4d4d; /* Merah */
+  width: 33%; 
+}
+
+.isian.sedang { 
+  background: #ffa500; /* Jingga/Orange */
+  width: 66%; 
+}
+
+.isian.kuat { 
+  background: #2ecc71; /* Hijau */
+  width: 100%; 
+}

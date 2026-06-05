@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validasi Formulir</title>
+  <link rel="stylesheet" href="link.css">
+</head>
+<body>
+
+  <form id='formulir'>
+    <div class='field'>
+      <label>Nama Lengkap</label>
+      <input id='nama' type='text' placeholder='Minimal 5 karakter'>
+      <span class='pesan-error'></span>
+    </div>
+    
+    <div class='field'>
+      <label>Alamat Email</label>
+      <input id='email' type='email'>
+      <span class='pesan-error'></span>
+    </div>
+    
+    <div class='field'>
+      <label>Password</label>
+      <input id='password' type='password' placeholder="Minimal 8 karakter">
+      <div class='bilah'><div class='isian'></div></div>
+      <span class='pesan-error'></span>
+    </div>
+    
+    <button type='submit'>Daftar Sekarang</button>
+  </form>
+
+  <div id='sukses' class='tersembunyi'> ✓ Berhasil!</div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

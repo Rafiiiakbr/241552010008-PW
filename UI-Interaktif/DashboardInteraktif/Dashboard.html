@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Statistik</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class='tab-nav'>
+    <button class='tombol-tab aktif' data-tab='ikhisar'>Ikhtisar</button>
+    <button class='tombol-tab' data-tab='statistik'>Statistik</button>
+    <button class='tombol-tab' data-tab='pengaturan'>Pengaturan</button>
+  </nav>
+
+  <section id='ikhisar' class='panel aktif'>
+    <div class='grid-statistik'>
+      <div class='kartu-stat' data-target='1500'>
+        <h3 class='penghitung'>0</h3>
+        <p>Total Pengguna</p>
+      </div>
+    </div>
+  </section>
+
+  <section id='statistik' class='panel'>
+    <h2>Detail Analitik</h2>
+    <p>Grafik dan data performa Anda akan muncul di sini.</p>
+  </section>
+
+  <section id='pengaturan' class='panel'>
+    <div class='item-akordion'>
+      <button class='judul-akordion'>Tema Tampilan</button>
+      <div class='konten-akordion'>
+        <button id='theme-btn'>Alihkan Mode Gelap</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="dashboard.js" defer></script>
+</body>
+</html>
