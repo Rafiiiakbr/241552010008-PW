@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PodHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>   
+    
+<h1>
+    Pod<span class="hub">Hub</span>
+</h1>
+
+    <button id="darkModeBtn">
+    🌙 Mode Gelap
+</button>
+</header>
+
+<nav class="tabs">
+    <button class="tab active" data-tab="dashboard">
+        Dashboard
+    </button>
+
+    <button class="tab" data-tab="jadwal">
+        Jadwal
+    </button>
+
+    <button class="tab" data-tab="formulir">
+        Formulir
+    </button>
+</nav>
+
+<section id="dashboard" class="content active">
+    <h2>Dashboard Narasumber</h2>
+    <p>Selamat datang di PodHub kami, dichanel dua trio lembayung.</p>
+</section>
+
+<section id="jadwal" class="content">
+    <h2>Jadwal</h2>
+
+    <ul>
+        <li>Ramaa mber - Jum'at (biar sholat jum'at)</li>
+        <li>Kepin mangkir - Selasa</li>
+        <li>Mas peke - Minggu</li>
+    </ul>
+</section>
+
+<section id="formulir" class="content">
+    <h2>Form Pendaftaran Narsum</h2>
+
+    <form id="formulir">
+
+        <label>Nama</label>
+        <input type="text" id="nama">
+        <small id="namaError"></small>
+
+        <label>Email</label>
+        <input type="email" id="email">
+        <small id="emailError"></small>
+
+        <label>Password</label>
+        <input type="password" id="password">
+        <small id="passwordError"></small>
+
+        <div id="strength"></div>
+
+        <button type="submit">
+            Daftar
+        </button>
+
+    </form>
+
+    <div id="sukses" class="tersembunyi">
+        ✅ Pendaftaran berhasil!
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
